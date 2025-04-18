@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>디자인 프리뷰</title>
+  <style>
+    @font-face {
+      font-family: 'SB Aggro';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2303@1.1/SBAggroOTFMedium.woff') format('woff');
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: 'SB Aggro';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2303@1.1/SBAggroOTFBold.woff') format('woff');
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: 'SB Aggro';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2303@1.1/SBAggroOTFLight.woff') format('woff');
+      font-weight: 300;
+    }
+
+    body {
+      font-family: 'SB Aggro', sans-serif;
+      background-color: #f5f5f5;
+      padding: 40px;
+      color: #272727;
+    }
+
+    .editable {
+      border: 1px dashed #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+      background: white;
+      cursor: text;
+    }
+
+    .color-sample {
+      display: inline-block;
+      width: 100px;
+      height: 30px;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>텍스트 스타일 샘플</h2>
+
+  <div class="editable" contenteditable="true" style="font-size:35pt; font-weight:300;">SB 어그로 Light - 35pt</div>
+  <div class="editable" contenteditable="true" style="font-size:70pt; font-weight:500;">SB 어그로 Medium - 70pt</div>
+  <div class="editable" contenteditable="true" style="font-size:140pt; font-weight:500;">SB 어그로 Medium - 140pt</div>
+  <div class="editable" contenteditable="true" style="font-size:210pt; font-weight:700;">SB 어그로 Bold - 210pt</div>
+
+  <h2>컬러 샘플</h2>
+  <div class="color-sample" style="background-color:#9abcff;"></div> #9abcff<br><br>
+  <div class="color-sample" style="background-color:#cd3032;"></div> #cd3032<br><br>
+  <div class="color-sample" style="background-color:#3c527e;"></div> #3c527e<br><br>
+  <div class="color-sample" style="background-color:#272727;"></div> #272727<br><br>
+
+  <h2>사이즈 박스 예시</h2>
+  <div style="width:180px; height:90px; background:#9abcff; margin-bottom:10px;">180x90</div>
+  <div style="width:900px; height:140px; background:#cd3032; margin-bottom:10px;">900x140</div>
+  <div style="width:1740px; height:110px; background:#3c527e; margin-bottom:10px;">1740x110</div>
+
+</body>
+</html>
